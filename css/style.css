@@ -1,0 +1,30 @@
+*{
+   box-sizing: border-box;
+}
+
+.block{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.elem{
+   background-color: grey;
+   padding: 40px;
+   border: 1px solid;
+   width: 20%;
+   margin-top: 10px;
+}
+
+/* Синтаксис media-запросов */
+@media (max-width: 1200px) and (orientation: portrait) {
+   .elem{
+      width: 50%;
+   }
+}
+/* Синтаксис медиа запросов */
+@media (max-width: 567px){
+   .elem{
+      width: 100%;
+   }
+}
